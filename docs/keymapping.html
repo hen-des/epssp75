@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EPSSP75</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="github-link-box">
+		<div class="github-link-text">
+			<img src="./assets/github.svg" width="25px" style="transform:translateY(4px);">
+		</div>
+		<a href="https://github.com/hen-des/hendes75"><span class="github-link"></span></a>
+	</div>
+	<header>
+		<h1>Ergonomic PSeudo SPlit 75-key Keyboard</h1>
+	</header>
+	<div class="layout-display center">
+	</div>
+	<article>
+		<p>
+			<a href="index.html">Back to main page</a>
+		</p>
+		<h2>Key Map in QMK Firmware</h2>
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-origin-EN.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		This is defined in the »Noted« keymap for this keyboard. See also the files in the <a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/epssp75" target="QMK">QMK Repo</a>.
+		It does not look exactly like the <a href="https://neo-layout.org/Layouts/noted/" target="NOTED">NOTED</a> layout and would not necessarily make much sense. But the image changes as soon as you interpret it in the way, as a usual german computer does.
+		<h2>Key Map for German OS</h2>
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-origin-DE.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		When holding down the FN key, most of the keys shift to another function.
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-origin-DE+FN.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		There are still a few keys, that would not necessarily make much sense: F20 to F23. This is, where the <a href="https://neo-layout.org/Einrichtung/reneo/" target="RENEO">ReNeo</a> software joins up.
+		<h2>Layers Defined in ReNeo</h2>
+		ReNeo uses Mod3 and Mod4 key in addition to shift to extend the keyboard to six software defined layers. The layers are defined in the layouts.json of the ReNeo software.
+		A file containing the used layout to define the following layers can be found <a href="https://github.com/hen-des/epssp75/tree/main/reneo" target="Repo">here</a>.<br>
+		Layer 1:
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-reneo-Layer1.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		With pressed FN key (exept for spacebar identical for all layers). The left side copies a lot from layer 4:
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-reneo+FN.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		Layer 2:
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-reneo-Layer2.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		Layer 3:
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-reneo-Layer3.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		Layer 4:
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-reneo-Layer4.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		Layer 5:
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-reneo-Layer5.svg" width="100%" style="padding: 3px;"/>
+		</div>
+		Layer 6:
+		<div class="layout-display center">
+		<img src="./assets/epssp75-keymap-reneo-Layer6.svg" width="100%" style="padding: 3px;"/>
+		</div>
+	</article>
+</body>

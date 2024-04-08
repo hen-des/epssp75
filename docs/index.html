@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EPSSP75</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="github-link-box">
+		<div class="github-link-text">
+			<img src="./assets/github.svg" width="25px" style="transform:translateY(4px);">
+		</div>
+		<a href="https://github.com/hen-des/hendes75"><span class="github-link"></span></a>
+	</div>
+	<header>
+		<h1>Ergonomic PSeudo SPlit 75-key Keyboard</h1>
+	</header>
+	<div class="layout-display center">
+		<img src="./assets/epssp75-Noted.jpg" width="100%" style="padding: 3px;"/>
+	</div>
+	<article>
+		<p>
+			This article describes my thoughts and some expiriences during the conception and manufacturing of this keyboard. The files can be found in the <a href="https://github.com/hen-des/epssp75" target="Repo">repository</a>.
+		</p>
+		<h2>Motivation</h2>
+		<p>
+			I have been using the <a href="https://trulyergonomic.com/" target="TE">Truly Ergonomic CLEAVE Keyboard</a> for two years since mid-2021. I was never dissatisfied with this keyboard.
+			However, I wanted to abandon the QWERTZ layout, which is common in Germany, and change the keyboard to the <a href="https://neo-layout.org/Layouts/mine/" target="MINE">MINE</a> layout*.
+			<br>
+			The search for suitable keycaps was difficult. Maybe I could have had the keycaps to be exchanged printed individually, but this would never have been a perfect solution.
+			I came across the possibility to build a keyboard from scratch. Especially the videos of <a href="https://github.com/joe-scotto" target="JS">joe-scotto</a> on <a href="https://www.youtube.com/@joe_scotto" target="YT">YouTube</a> have been very helpful.
+		</p>
+		<p>
+			*: In the above image, the keyboard is obviously not equipped with this layout. It is using the <a href="https://neo-layout.org/Layouts/noted/" target="NOTED">NOTED</a> layout.
+			This is a new layout published on <a href="https://dariogoetz.github.io/noted-layout/index.html" target="GH">GitHub</a> just two weeks after this keyboard was assembled. So it was not the initial plan; but it convinced me. It was optimized with 60% German and 40% English. Which are the only languages I use.
+		</p>
+		<h2>A new Layout</h2>
+		<p>
+			To get to the layout, which is now present, I had to answer a few questions:<br>1: How do I arrange the keys?<br>2: How do I assign the keys?<br>3: Which keycaps do I use?<br>
+			While the key arrangement was fixed after the case construction, the mapping was not. It changed quite a few times.
+		</p>
+		<h3>Key Arrangement</h3>
+		<p>
+			In search for an idea of how to arrange the keys on my keyboard, I came across the <a href="https://github.com/mattdibi/redox-keyboard" target="Redox">Redox Keyboard</a>.
+			The final layout of the keyboard has as a basis the Truly Ergonomic CLEAVE I used for a long time and also the Redox Keyboard.
+		</p>
+		<table>
+			<tr>
+				<td width="50%">
+					<img src="https://github.com/mattdibi/redox-keyboard/blob/master/img/redox-1.jpg?raw=true" width="95%" style="padding: 3px;"/>
+				</td>
+				<td width="50%">
+					The Redox Keyboard was the model for the number of keys in the outer area and the horizontal stagger of the key columns: 7, 7, 2.5, 0, 2.5 and 4.5 mm.<br>Not the 6.5 mm of the inward column.
+					<br>
+					<img src="./assets/Stagger.png" align="right" width="95%" style="padding: 3px;"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Of the Truly Ergonomic CLEAVE Keyboard I kept the inward keys: Paste, Undo, Cut, Copy (I have exchanged the last two, I need the Copy key on the left hand when working with the mouse.), Delete, Backspace, an additional Shift, Enter and the Spacebars.
+					<br>
+					I also adopted the opening angle of 20° between the two halves.
+				</td>
+				<td>
+					<img src="https://trulyergonomic.com/ergonomic-keyboards/wp-content/uploads/elementor/thumbs/Truly-Ergonomic-Cleave-Best-Mechanical-keyboard-white-shadow-pxl2s1k65rf73l6m1pexgj7yfw7l6mojmiq8avnvju.jpg" align="right" width="95%" style="padding: 3px;"/>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<img src="./assets/Case-One-Part.png" width="95%" style="padding: 3px;"/>
+				</td>
+				<td>
+					The arrow keys are not included with the Redox Keyboard. I didn't want to put them down, as the truly ergonomic does. But I also didn't want to do without them (And the Home and End key).
+					<br>
+					So I had the idea to put them in the middle between the two halves, separating them a bit more.
+				</td>
+			</tr>
+		</table>
+		<h3>Key Mapping</h3>
+			Also the key mapping was influenced by the Truly Ergonomic Keyboard. For example the space bars and the keys in the middle of the Truly Ergonomic Keyboard.
+			I only exchanged »cut« and »copy« as I need »copy« and »paste« on the left side when working with the mouse (on the right side).<br>
+			When mapping the keys to the »Noted« layout, this is the proposed solution:<br>
+			<img src="https://raw.githubusercontent.com/dariogoetz/noted-layout/25eebc97da284042096a6127b838a742f1fc3922/images/crkbd/noted-1-tkl.path.svg" width="75%" style="padding: 3px;"/><br>
+			I tried to move the »Tab« key in the central section of the keyboard. It did not work for me! So, the »ẞ« (sharp s) had to move. Not the »J«!<br>
+			This mapping is already implemented in the firmware using <a href="https://github.com/qmk" target="QMK">QMK</a>.
+			See also the files in the <a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/epssp75" target="QMK">QMK Repo</a>.
+			But I am still using the <a href="https://neo-layout.org/Einrichtung/reneo/" target="RENEO">ReNeo</a> software.
+			It offers way more possible key functions than available in the firmware. There are in total six layers and those are completely configurable.
+			On layer four I made some modifications to have keys for »ALT + F4«, »F2«, »F5«, »CTRL + LEFT« and »CTRL + RIGHT«.
+			A file containing the used layout to define those layers can be found <a href="https://github.com/hen-des/epssp75/tree/main/reneo" target="Repo">here</a>.<br><br>
+			Further details and images to the key mapping can be found <a href="keymapping.html">here</a>.<br><br>
+		<h3>Keycaps</h3>
+			I wanted keys with the XDA profile to be able to change them between the rows.<br>
+			At the end, I took the cheapest. I did find sets with for example the german letters »Ä«, »Ö« and »Ü« or with »5«, »F« and »J« without a line. But this was not in one set.<br>
+			And there was none with a second 1u SHIFT or CTRL key, none with a comma without »&lt;« (the dot and the numbers are from the number pad), none with a TAB or DELETE key in the needed size and of course none with a »ẞ«.
+			The »ẞ« key doesn't even exist on a German keyboard without additional symbols. Just like the »Q«, the »E« and the »M«.
+			But as this keyboard is designed to work with the layouts of the <a href="https://neo-layout.org/Layouts/" target="NEO">Neo Family</a>, none of the additional symbols would have made any sense!
+		<h2>Case Construction</h2>
+		<table>
+			<tr>
+				<td colspan="3">
+					So far I only had an idea of the key arrangement. The actual creation of this I directly did in the sketch in CAD (Autodesk Fusion 360).
+					<br>
+					I also had to divide the case into three parts. My 3D printer is too small for a complete keyboard.
+					<img src="./assets/Case-Three-Parts.png" width="100%" style="padding: 3px;"/>
+					<br>
+					The case is built without any surrounding boundary around the switches and the keycaps. The switches are visible and the upper part of the case is the only visible part of the case.
+					The only reason for a bottom plate is the fixation of the controller and the protection of the wiring.
+					<img src="./assets/Side-View.jpg" width="100%" style="padding: 3px;"/>
+					<br>
+					The plane of the keys is tilted forward 2.5°. So, the keyboard is higher at the back and also the bottom plate is thicker at the back.
+				</td>
+			</tr>
+			<tr>
+				<td width="50%">
+					<img src="./assets/Case-Section-Left.png" width="95%" style="padding: 3px;"/>
+					<br>
+					The vertical screw-in tubes are 8 mm long. In general this is enough to wire a keyboard. The tubes do not have a printed thread.<br>But the screws do not care.
+				</td>
+				<td width="50%" colspan="2">
+					<img src="./assets/Case-Section-Center.png" width="95%" style="padding: 3px;"/>
+					<br>
+					In the central section I needed more space for the wires. The tubes however are still 8 mm long. I did this afterwards, so it was easier to implement this way.
+				</td>
+			</tr>
+			<tr>
+				<td width="75%" colspan="2">
+					<br>
+					In order for the switches to lock in the case, there is one important dimension. At the position of the switches, the case needs a wall thickness of 1.5 mm.
+					<br>
+					I have added cut outs as the case should have a thickness of 3 mm.
+					<br>
+					And it was not that easy to get this 1.5 mm. I had to experiment a bit with the thickness (finally 1.3 mm) in CAD and the layer thickness in the 3D printer (add up to about the same value in the end).
+					In reality I get the 1.5 mm and the switches fit in tight.
+				</td>
+				<td width="25%">
+					<img src="./assets/Cut-Out.png" width="95%" style="padding: 3px;"/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<a href="https://github.com/hen-des/epssp75/tree/main/cad" target="CAD">Link</a> to CAD file.
+				</td>
+			</tr>
+		</table>
+		<h2>Assembling</h2>
+		There is not much to say. It took some time.
+		<img src="./assets/Soldering1.jpg" width="100%" style="padding: 3px;"/>
+		While the upper picture looks like a work of art, the lower one shows a little more chaos.
+		<img src="./assets/Soldering2.jpg" width="100%" style="padding: 3px;"/>
+		<h2>Controller and Firmware</h2>
+		The controller is a <a href="https://github.com/qmk/qmk_firmware/blob/master/docs/platformdev_rp2040.md" target="RB">Raspberry Pi Pico</a>.
+		<br>
+		To create the firmware I set up the <a href="https://docs.qmk.fm/#/newbs_getting_started" target="Setup">QMK Firmware</a> on my pc and created the necessary files.
+		A video of joe-scotto also offers a <a href="https://www.youtube.com/watch?v=hjml-K-pV4E&t=748s" target="Last">helpful explanation</a> on this.
+	</article>
+</body>
