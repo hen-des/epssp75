@@ -2,7 +2,7 @@
 <p>
 This is an Ergonomic PSeudo SPlit 75-key Keyboard. It was desinged after two years of working with a <a href="https://trulyergonomic.com/">Truly Ergonomic CLEAVE Keyboard</a> and also inspired by the <a href="https://github.com/mattdibi/redox-keyboard">Redox Keyboard</a>.
 </p>
-<img src="/docs/assets/epssp75-Noted.jpg" width="600" style="border-radius:3%"/>
+<img src="/docs/assets/epssp75-Noted.jpg" width="850" style="border-radius:3%"/>
 <p>
 This keyboard is designed to work with the layouts of the <a href="https://neo-layout.org/Layouts/">Neo Family</a> and the <a href="https://neo-layout.org/Einrichtung/reneo/" target="RENEO">ReNeo</a> software.
 </p>
