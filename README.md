@@ -7,7 +7,7 @@ This is an Ergonomic PSeudo SPlit 75-key Keyboard. It was desinged after two yea
 This keyboard is designed to work with the layouts of the <a href="https://neo-layout.org/Layouts/">Neo Family</a> and the <a href="https://neo-layout.org/Einrichtung/reneo/" target="RENEO">ReNeo</a> software.
 </p>
 <p>
-The firmware was created using <a href="https://github.com/qmk" target="QMK">QMK</a>. See also the files in the <a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/epssp75" target="QMK">QMK Repo</a>.
+The firmware was created using <a href="https://github.com/qmk" target="QMK">QMK</a>. See also the files in the <a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/hen_des/epssp75" target="QMK">QMK Repo</a>.
 But I am still using the <a href="https://neo-layout.org/Einrichtung/reneo/" target="RENEO">ReNeo</a> software.
 And the ReNeo software offers more possible key functions and in total six layers.
 The file containing the used layout to define those layers can be found <a href="https://github.com/hen-des/epssp75/tree/main/reneo" target="Repo">here</a>.
